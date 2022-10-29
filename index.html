@@ -35,16 +35,18 @@
         <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <script src="https://kit.fontawesome.com/407a013642.js"
+            crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class=" justify-content-center pt-2 sticky-sm-top">
+        <header class="justify-content-center pt-2 sticky-sm-top">
             <div class="logo">
-                <h1 class=""><span>{</span>Lucas <span> /</span>
+                <h1><span>{</span>Lucas <span> /</span>
                     Portfólio<span>}</span></h1>
             </div>
         </header>
         <main>
-            <section class="d-flex p-5 align-items-center
+            <section id="biosec" class="d-flex p-5 align-items-center
                 justify-md-content-around justify-content-center
                 flex-row w-full ">
                 <div class="bio d-inline-block text-center text-md-start
@@ -103,13 +105,96 @@
                     </div>
                 </div>
             </section>
+            <section id="projetos">
+                <h2 class="py-3"><span>{</span>Projetos<span>}</span></h2>
+                <div class="projeto-grid">
+                    <div class="projeto border-anime border-active">
+                        <div class="mt-auto">
+                            <p class="type">API - Flask
+                                <i class="devicon-flask-original"></i>
+                            </p>
+                            <h3 class="">Moravec Library</h3>
+                            <p class="projeto-descricao">Moravec library é um
+                                sistema de
+                                armazenamento de
+                                livros feito como uma maneira de praticar o
+                                desenvolvimento de API's com Flask e o uso de
+                                banco
+                                de dados com TinyDB devido a praticidade de
+                                implementá-lo junto de um projeto mais simples.</p>
+                            <a
+                                href="https://moraveclibrary.lucasborges.tech/"
+                                target="_blank" class="underline-anime">Visualizar
+                                projeto</a>
+                        </div>
+                    </div>
+                    <div class="projeto border-anime border-active">
+                        <div class="mt-auto ">
+                            <p class="type">Rest API + MongoDB
+                                <i class="devicon-mongodb-plain"></i>
+                            </p>
+                            <h3 class="">FerStock</h3>
+                            <p class="projeto-descricao">Meu principal projeto
+                                em desenvolvimento atualmente, criado em
+                                parceria com outro programador responsável pela
+                                interface direciono meus esforços na criação de
+                                um Docker Container para a utilização do MongoDB e Django, criando assim um backend ágil e seguro para o projeto.</p>
+                            </p>
+                            <a href="ferstock.html" target="_blank" class="underline-anime">Visualizar
+                                projeto</a>
+                        </div>
+                    </div>
+                    <div class="projeto border-anime">
+                        <div class="mt-auto ">
+                            <p class="type">Em produção
+                                <i class="fa-solid fa-receipt"></i>
+                            </p>
+                            <h3 class="">Em produção...</h3>
+                            <p class="projeto-descricao">Por favor, aguarde enquanto um
+                                novo projeto está em produção, caso surja alguma
+                                dúvida ou recomendação fique à vontade para
+                                entrar em contato através das opções de contato
+                                no menu circular, localizado ao canto inferior
+                                direito da sua tela.</p>
+                            <a href="#biosec" class="underline-anime">Visualizar
+                                projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"></script>
+        <section>
+            <ul class="menu">
+                <div onclick="toggler()" class="toggle">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </div>
+                <li style="--i:0;"><a
+                        href="https://www.linkedin.com/in/lucas-borges-da-silva-sls/"
+                        target="_blank">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a></li>
+                <li style="--i:1;"><a href="https://github.com/Lusqinha"
+                        target="_blank">
+                        <i class="devicon-github-original"></i>
+                    </a></li>
+                <li style="--i:2;"><a href="https://t.me/lusqinha"
+                        target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a></li>
+                <li style="--i:3;"><a href="https://calendly.com/lusqinha"
+                        target="_blank"><i class="fa-solid fa-calendar"></i>
+                    </a></li>
+                <li style="--i:4;"><a
+                        href="https://cursos.alura.com.br/user/lucasborges/fullCertificate/79e67bda0de3a038fd639f54630dd328"
+                        target="_blank"><i class="fa-solid
+                            fa-scroll"></i>
+                    </a></li>
+            </ul>
+        </section>
+        <script src="js/menu-btn.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
             integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"

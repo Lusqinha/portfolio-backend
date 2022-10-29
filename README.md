@@ -6,7 +6,7 @@ Portfólio que desenvolvi para fins de estudo, apresentação e divulgação de 
 
 - [Portfólio](https://lucasborgess.com)
 
-- [LinkSecundário](https://lucasborges.tech)
+- [Link Secundário](https://lucasborges.tech)
 
 ## Imagens
 
