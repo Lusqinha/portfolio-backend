@@ -1,0 +1,278 @@
+/* PERSONALIZAÇÕES GERAIS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@200&display=swap');
+
+html{
+    font-family: 'Source Code Pro', monospace;
+}
+
+body{
+    background: rgb(23,1,41);
+    background: radial-gradient(circle, rgba(23,1,41,1) 0%, rgba(13,0,22,1) 100%);
+    background-size: cover;
+    background-position: top center;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 95%;
+    padding: 0 5px;
+}
+
+p::selection, h1::selection, h2::selection, h3::selection, span::selection, a::selection{
+    background: rgba(110, 0, 201, 0.2);
+}
+
+.lord-icon{
+    width:35px;
+    height:35px;
+}
+
+.underline-anime{
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    position: relative;
+}
+
+.underline-anime::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(110, 12, 175);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.45s ease-out;
+    
+}
+
+.underline-anime:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* CABEÇALHO E DEPENDÊNCIAS */
+
+header{
+    background: rgba(17, 17, 17, 0.13);
+    font-weight: lighter;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav li{
+    margin: 0 0.5rem;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 ;
+}
+
+.navbar li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.logo h1{
+    font-size: 2rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.logo span{
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(61, 61, 61));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* CONTEÚDO PRINCIPAL */
+
+.bio h2{
+    font-size: 2rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.bio #nome{
+    font-size: 6rem;
+    font-family: 'Source Code Pro', monospace;
+}
+.bio span{
+
+    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(61, 61, 61));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    align-items: center;
+}
+
+.bio p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+section img{
+    width: 36%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+}
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(9, 0, 12, 0.8);
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    font-size: 5rem;
+    font-weight: 200;
+    font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
+}
+
+#tec{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#tec h2{
+    font-size: 3rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#tec span{
+    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(80, 80, 80));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.info-container{
+width: 50%;
+}
+
+#prof-name{
+    font-size: 3rem;
+    font-weight: 200;
+    color: rgb(213, 130, 255);
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+@media screen and (max-width: 980px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    
+
+@media screen and (max-width: 854px){
+    section img{
+        width: 25%;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .bio h2{
+        display: block;
+        margin: 0 auto;
+    }
+    .bio #nome{
+        font-size: 5rem;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .grid-item{
+        width: 150px;
+        height: 150px;
+        font-size: 4rem;
+    }
+    .info-container{
+        width: 100%;
+        }
+}
+
+@media screen and (max-width: 452px){
+    .bio{
+        margin: 0 auto;
+    }
+    .bio #nome{
+        font-size: 3.5rem;
+    }
+
+    .bio #nome, .bio span{
+        text-align: center;
+    }
+
+    #tec h2{
+        font-size: 2rem;
+    }
+
+    #tec span{
+        font-size: 2.5rem;
+    }
+
+    #prof-name{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}

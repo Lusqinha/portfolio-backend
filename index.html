@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="web/favicon.ico" type="image/x-icon">
+        <title>Lucas Borges | Python developer portfólio</title>
+        <!-- SEO -->
+        <meta name="author" content="Lucas Borges da Silva" />
+        <meta name="keywords"
+            content="portfolio, portfólio, back-end, backend, freelancer,
+            python, django,
+            flask, restapi, rest-api, docker, git, linux, docker-compose" />
+        <meta name="description"
+            content="Desenvolvedor Python com experiência em REST API construída
+            em Django
+            e Flask, assim como na manipulação de banco de dados SQL e NoSQL;
+            conhecimentos em Docker, Docker-compose e linux também são
+            apresentados."
+            />
+        <!-- /SEO -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous">
+        <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    </head>
+    <body>
+        <header class=" justify-content-center pt-2 sticky-sm-top">
+            <div class="logo">
+                <h1 class=""><span>{</span>Lucas <span> /</span>
+                    Portfólio<span>}</span></h1>
+            </div>
+        </header>
+        <main>
+            <section class="d-flex p-5 align-items-center
+                justify-md-content-around justify-content-center
+                flex-row w-full ">
+                <div class="bio d-inline-block text-center text-md-start
+                    text-white">
+                    <h2 class="text-center text-md-start">Olá! Meu nome é </h2>
+                    <h3 class="" id="nome"><span>{</span>Lucas<span>}</span></h3>
+                    <p>Sou um programador backend em treinamento.</p>
+                </div>
+                <img src="web/Illustration.svg" alt="Ilustração
+                    de um homem sentado em um computador" class="d-none
+                    d-md-inline-block">
+            </section>
+            <section id="tec" class="mx-auto">
+                <h2 class="py-3"><span>{</span>Tecnologias<span>}</span></h2>
+                <script src="js/tecnologias.js"></script>
+                <div class="d-flex mx-sm-5
+                    justify-content-around flex-md-row
+                    flex-column">
+                    <div class="info-container mx-auto">
+                        <h3 id="prof-name"
+                            class="underline-anime">Descrição</h3>
+                        <p id="descricao" class="text-center text-sm-start
+                            h-100">Selecione
+                            uma
+                            tecnologia e uma uma
+                            breve descrição será exibida aqui!</p>
+                    </div>
+                    <div class="mx-auto">
+                        <ul class="grid-container mx-auto">
+                            <li onclick="mostrarDescricao('Python')"
+                                class="underline-anime
+                                grid-item">
+                                <i class="devicon-python-plain"></i>
+                            </li>
+                            <li onclick="mostrarDescricao('Django')"
+                                class="underline-anime grid-item">
+                                <i class="devicon-django-plain"></i>
+                            </li>
+                            <li onclick="mostrarDescricao('Docker')"
+                                class="underline-anime grid-item">
+                                <i class="devicon-docker-plain"></i>
+                            </li>
+                            <li onclick="mostrarDescricao('GIT')"
+                                class="underline-anime grid-item">
+                                <i class="devicon-git-plain"></i>
+                            </li>
+                            <li onclick="mostrarDescricao('MongoDB')"
+                                class="underline-anime grid-item">
+                                <i class="devicon-mongodb-plain"></i>
+                            </li>
+                            <li onclick="mostrarDescricao('MySQL')"
+                                class="underline-anime grid-item">
+                                <i class="devicon-mysql-plain"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
