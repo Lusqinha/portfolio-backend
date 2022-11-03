@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@200&display=swap');
 
+html.sr .load-hidden{
+    visibility: hidden;
+}
+
 html{
     font-family: 'Source Code Pro', monospace;
     
@@ -216,6 +220,7 @@ width: 50%;
     align-items: center;
     font-family: 'Source Code Pro', monospace;
 }
+
 #projetos{
     margin: 4rem auto;
 }
