@@ -313,82 +313,78 @@ width: 50%;
 }
 
 /* RODAPÉ E CONTATO */
-.contato{
-    padding-bottom: 40px;
-}
+/* MENU SOBREPOSTO */
 
-.contato h2{
-    font-size: 3rem;
-    font-weight: 200;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.contato span{
-    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(80, 80, 80));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    align-items: center;
-    font-size: 3.5rem;
-}
-
-.contato p{
-    font-size: 1.5rem;
-    font-weight: 200;
-    color: rgb(255, 255, 255);
-    align-items: center;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.contato-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    padding: 0.5rem;
-}
-
-.contato-grid-item{
-    background: rgba(9, 0, 12, 0.8);
-    padding: 1.5rem;
-    color: #fff;
-    text-align: center;
-    grid-area: auto;
-    font-weight: 200;
-    font-family: 'Source Code Pro', monospace;
-    cursor: pointer;
-}
-
-.contato ul{
+.menu{
+    position: fixed;
+    bottom: 0px;
+    right: 25px;
+    width: 125px;
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
-.contato li{
-    background: rgba(9, 0, 12, 0.8);
-    padding: 1.5rem 2.5rem;
-    color: #fff;
-    text-align: left;
-    grid-area: auto;
-    font-weight: 200;
-    font-family: 'Source Code Pro', monospace;
+
+.menu .toggle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba( 144, 19, 254, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.5px );
+    -webkit-backdrop-filter: blur( 14.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: rgba(255, 255, 255,1);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
     cursor: pointer;
+    transition: 0.4s;
 }
-.contato li a{
-    font-size: 4rem;
-    color: rgb(210, 71, 252);
-    text-decoration: none;
+
+.menu .toggle.active{
+    transform: rotate(136deg);
+    box-shadow: 0 0 0 35px rgba( 144, 19, 254, 0.25 ), 0 0 0 35px rgba( 144, 19, 254, 0.1 );
+    background: transparent;
+    color: #fff;
+}
+
+.menu li{
+    position: absolute;
+    list-style: none;
+    left: 23px;
+    transform: rotate(calc(360deg / 5 * var(--i)));
+    transform-origin: 55px;
+    visibility: hidden;
+    opacity: 0;
     transition: 0.3s;
+    z-index: 10;
 }
-.contato li a:hover{
-    color: rgb(216, 144, 252);
+
+.menu.active li{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.menu li a{
     text-decoration: none;
-    transition: 0.3s;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 1.3em;
+    transform: rotate(calc(360deg / -5 * var(--i)));
 }
+
+
+/* Responsividade */
 
 @media screen and (max-width: 980px){
     .grid-container{
@@ -465,72 +461,3 @@ width: 50%;
 }
 
 
-/* MENU SOBREPOSTO */
-
-.menu{
-    position: fixed;
-    bottom: 0px;
-    right: 10px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu .toggle{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: rgba( 144, 19, 254, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 14.5px );
-    -webkit-backdrop-filter: blur( 14.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    color: rgba(255, 255, 255,1);
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.menu .toggle.active{
-    transform: rotate(136deg);
-    box-shadow: 0 0 0 35px rgba( 144, 19, 254, 0.25 ), 0 0 0 35px rgba( 144, 19, 254, 0.1 );
-    background: transparent;
-    color: #fff;
-}
-
-.menu li{
-    position: absolute;
-    list-style: none;
-    left: 30px;
-    transform: rotate(calc(360deg / 5 * var(--i)));
-    transform-origin: 60px;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-    z-index: 10;
-}
-
-.menu.active li{
-    visibility: visible;
-    opacity: 1;
-    transition: 1s;
-}
-
-.menu li a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    font-size: 1.3em;
-    transform: rotate(calc(360deg / -5 * var(--i)));
-}
