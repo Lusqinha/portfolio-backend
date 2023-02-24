@@ -123,6 +123,7 @@ nav li{
     font-size: 2.5rem;
     background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(61, 61, 61));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 /* CONTEÚDO PRINCIPAL */
@@ -144,6 +145,7 @@ nav li{
 
     background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(61, 61, 61));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     align-items: center;
@@ -161,6 +163,7 @@ nav li{
 section .nave{
     width: 30vw;
     -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
     margin-left: 10vw;
     -webkit-filter: drop-shadow(0 0 100px rgba(59, 3, 97, 0.5));
     filter: drop-shadow(10px 0 100px rgba(61, 2, 100, 0.5));
@@ -219,6 +222,7 @@ section .nave{
 #tec span{
     background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(80, 80, 80));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     align-items: center;
@@ -252,6 +256,7 @@ width: 50%;
 #projetos span{
     background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(80, 80, 80));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     align-items: center;
