@@ -157,9 +157,25 @@ nav li{
     font-family: 'Source Code Pro', monospace;
 }
 
-section img{
-    width: 36%;
+
+section .nave{
+    width: 30vw;
+    -webkit-transform: scaleX(-1);
+    margin-left: 10vw;
+    -webkit-filter: drop-shadow(0 0 100px rgba(59, 3, 97, 0.5));
+    filter: drop-shadow(10px 0 100px rgba(61, 2, 100, 0.5));
 }
+
+#biosec,#tec{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
 
 .grid-container{
     display: grid;
@@ -386,6 +402,9 @@ width: 50%;
 
 /* Responsividade */
 
+
+
+
 @media screen and (max-width: 980px){
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
@@ -398,14 +417,6 @@ width: 50%;
     .info-container{
         align-self: center;
     }
-}
-    
-
-@media screen and (max-width: 854px){
-    section img{
-        width: 25%;
-    }
-    
 }
 
 @media screen and (max-width: 768px){
@@ -430,6 +441,10 @@ width: 50%;
     }
     .projeto-grid{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #projetos{
+        margin-top: 5rem;
     }
     
 }

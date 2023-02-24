@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- TITLE ICON -->
-        <link rel="shortcut icon" href="web/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="src/web/favicon.ico" type="image/x-icon">
         <title>Lucas Borges | Python developer portfólio</title>
         <!-- SEO -->
         <meta name="author" content="Lucas Borges da Silva" />
@@ -53,11 +53,11 @@
                     text-white">
                     <h2 class="text-center text-md-start">Olá! Meu nome é </h2>
                     <h3 class="" id="nome"><span>{</span>Lucas<span>}</span></h3>
-                    <p>Sou um programador backend em treinamento.</p>
+                    <p>Sou um programador backend e <br>estudante de Análise e Desenvolvimento de Sistemas.</p>
                 </div>
-                <img src="src/web/Illustration.svg" alt="Ilustração
+                <img src="src/web/nave.png" alt="Ilustração
                     de um homem sentado em um computador" class="d-none
-                    d-md-inline-block">
+                    d-md-inline-block nave">
             </section>
             <section id="tec" class="mx-auto">
                 <h2 class="py-3"><span>{</span>Tecnologias<span>}</span></h2>
@@ -89,9 +89,9 @@
                                 class="underline-anime cards grid-item">
                                 <i class="devicon-docker-plain"></i>
                             </li>
-                            <li onclick="mostrarDescricao('GIT')"
+                            <li onclick="mostrarDescricao('Linux')"
                                 class="underline-anime cards grid-item">
-                                <i class="devicon-git-plain"></i>
+                                <i class="devicon-linux-plain"></i>
                             </li>
                             <li onclick="mostrarDescricao('MongoDB')"
                                 class="underline-anime cards grid-item">
@@ -107,9 +107,9 @@
             </section>
             <section id="projetos" class="reveal">
                 <h2 class="py-3"><span>{</span>Projetos<span>}</span></h2>
-                <div class="projeto-grid">
+                <div class="projeto-grid px-sm-0 px-md-3 px-lg-5">
                     <div class="projeto border-anime border-active">
-                        <div class="mt-auto">
+                        <div class="mt-auto h-100 d-flex flex-column justify-content-between">
                             <p class="type">Python + Lib's 
                                 <i class="devicon-python-plain"></i>
                             </p>
@@ -117,42 +117,41 @@
                             <p class="projeto-descricao">Rebeca é um assistente virtual desenvolvida por mim, de colaboração livre, para fins de estudo e utilização pessoal; pode ser utilizada, até o momento apenas no computador, sendo capaz de realizar tarefas simples, como abrir um site e ouvir músicas, ou mais complexas, enviar mensagens via WhatsApp.</p>
                             <a
                                 href="https://github.com/Lusqinha/Rebeca_assistente_virtual"
-                                target="_blank" class="underline-anime">Visualizar
+                                target="_blank" class="">Visualizar
                                 projeto</a>
                         </div>
                     </div>
+
                     <div class="projeto border-anime border-active">
-                        <div class="mt-auto ">
-                            <p class="type">Rest API + MongoDB
-                                <i class="devicon-mongodb-plain"></i>
+                        <div class="mt-auto h-100 d-flex flex-column justify-content-between">
+                            <p class="type">Python + StreamLit
+                                <i class="devicon-python-plain"></i>
                             </p>
-                            <h3 class="">FerStock</h3>
+                            <h3 class="">Jalin - MP3</h3>
+                            <p class="projeto-descricao">Projeto criado para auxiliar no download de músicas através de links do YouTube; o download pode ser feito a partir de uma pesquisa, de um link individual ou de uma playlist pública ou não listada. O projeto teve sua interface desenvolvida com a biblioteca StreamLit, o que torna a hospedagem e funcionamento do projeto    acessível para o usuário independe do dispositivo utilizado.</p>
+                            <a target="_blank" href="https://mp3-download.lucasborgess.com/" class="">Visualizar
+                                projeto</a>
+                        </div>
+                    </div>
+
+                    <div class="projeto border-anime">
+                        <div class="mt-auto h-100 d-flex flex-column justify-content-between">
+                            <p class="type">Em produção
+                                <i class="fa-solid fa-receipt"></i>
+                            </p>
+
+                            <h3 class="">FerStock - Gerenciamento</h3>
                             <p class="projeto-descricao">Meu principal projeto
                                 em desenvolvimento atualmente, criado em
                                 parceria com outro programador responsável pela
                                 interface direciono meus esforços na criação de
-                                um Docker Container para a utilização do MongoDB e Django, criando assim um backend ágil e seguro para o projeto.</p>
+                                um Docker Container para a utilização do MySQL e Django, criando assim um backend ágil e seguro para o projeto.</p>
                             </p>
-                            <a href="ferstock.html" target="_blank" class="underline-anime">Visualizar
+                            <a href="ferstock.html" class="">Visualizar
                                 projeto</a>
                         </div>
                     </div>
-                    <div class="projeto border-anime">
-                        <div class="mt-auto ">
-                            <p class="type">Em produção
-                                <i class="fa-solid fa-receipt"></i>
-                            </p>
-                            <h3 class="">Em produção...</h3>
-                            <p class="projeto-descricao">Olá! Pegue um café e aguarde enquanto um
-                                novo projeto está em produção, caso surja alguma
-                                dúvida ou recomendação fique à vontade para
-                                entrar em contato através das opções de contato
-                                no menu circular, localizado ao canto inferior
-                                direito da sua tela.</p>
-                            <a href="#tec" class="underline-anime">Visualizar
-                                projeto</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </section>
         </main>
