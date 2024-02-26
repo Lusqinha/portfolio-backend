@@ -1,20 +1,19 @@
 /* PERSONALIZAÇÕES GERAIS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-html.sr .load-hidden{
+html.sr .load-hidden {
     visibility: hidden;
 }
 
-html{
+html {
     font-family: 'Source Code Pro', monospace;
-    
 }
 
-body{
-    background: rgb(23,1,41);
-    background: radial-gradient(circle, rgba(23,1,41,1) 0%, rgba(13,0,22,1) 100%);
+body {
+    background: rgb(23, 1, 41);
+    background: radial-gradient(circle, rgba(23, 1, 41, 1) 0%, rgba(13, 0, 22, 1) 100%);
     background-size: cover;
     background-position: top center;
     color: #fff;
@@ -24,85 +23,86 @@ body{
     padding: 0;
 }
 
-section{
+section {
     margin: 0 auto;
     max-width: 95%;
     padding: 0 5px;
 }
 
-p::selection, h1::selection, h2::selection, h3::selection, span::selection, a::selection{
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+span::selection,
+a::selection {
     background: rgba(110, 0, 201, 0.2);
 }
 
-.lord-icon{
-    width:35px;
-    height:35px;
+.lord-icon {
+    width: 35px;
+    height: 35px;
 }
 
-.underline-anime{
+.underline-anime {
     display: inline-block;
     margin-block: 2px;
     text-decoration: none;
     position: relative;
 }
 
-.underline-anime::after{
+.underline-anime::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 1px;
-    background: rgb(243,234,249);
-    background: linear-gradient(90deg, rgba(45, 1, 75,0.5) 0%, rgba(110,12,175,1) 56%);
+    background: rgb(243, 234, 249);
+    background: linear-gradient(90deg, rgba(45, 1, 75, 0.5) 0%, rgba(110, 12, 175, 1) 56%);
     bottom: 0;
     left: 0;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.45s ease-out;
-    
 }
 
-.underline-anime:hover::after{
+.underline-anime:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-
 /* CABEÇALHO E DEPENDÊNCIAS */
 
-header{
+header {
     background: rgba(17, 17, 17, 0.13);
     font-weight: lighter;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
-
 }
 
-nav li{
+nav li {
     margin: 0 0.5rem;
-    
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem 0 ;
+    padding: 1rem 0;
 }
 
-.navbar li a{
+.navbar li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ nav li{
     font-weight: lighter;
 }
 
-.logo h1{
+.logo h1 {
     font-size: 2rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
@@ -119,16 +119,38 @@ nav li{
     font-family: 'Source Code Pro', monospace;
 }
 
-.logo span{
+.logo .span_highlight {
     font-size: 2.5rem;
     background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(61, 61, 61));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.ubuntu_font {
+    font-family: 'Ubuntu', sans-serif!important;
+    font-weight: 400;
+}
+
+.linux_intro {
+    color: #697e5e !important;
+}
+
+.linux_intro_white {
+    color: #bec0c6 !important;
+}
+
+.linux_intro_blue {
+    color: #5796cc !important;
+}
+
+#command{
+    margin-left: 0.8rem;
+}
+
 /* CONTEÚDO PRINCIPAL */
 
-.bio h2{
+.bio h2 {
     font-size: 2rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
@@ -137,12 +159,12 @@ nav li{
     font-family: 'Source Code Pro', monospace;
 }
 
-.bio #nome{
+.bio #nome {
     font-size: 6rem;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Ubuntu', sans-serif;
 }
-.bio span{
 
+.bio span {
     background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(61, 61, 61));
     -webkit-background-clip: text;
     background-clip: text;
@@ -151,7 +173,7 @@ nav li{
     align-items: center;
 }
 
-.bio p{
+.bio p {
     font-size: 1.5rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
@@ -159,18 +181,17 @@ nav li{
     font-family: 'Source Code Pro', monospace;
 }
 
-
-section .nave{
-    width: 30vw;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+section .logo_icon {
+    width: 35vw;
     margin-left: 10vw;
+    transform: scaleX(-1);
     -webkit-filter: drop-shadow(0 0 100px rgba(59, 3, 97, 0.5));
     filter: drop-shadow(10px 0 100px rgba(61, 2, 100, 0.5));
 }
 
-#biosec,#tec{
-    height: 90vh;
+#biosec,
+#tec,#projetos {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,15 +199,15 @@ section .nave{
     margin: auto;
 }
 
-
-
-.grid-container{
+.grid-container {
+    margin-left: 0.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
     padding: 0.5rem;
 }
-.grid-item{
+
+.grid-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,15 +215,15 @@ section .nave{
     padding: 1.5rem;
     color: #fff;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     font-size: 5rem;
     font-weight: 200;
     font-family: 'Source Code Pro', monospace;
     cursor: pointer;
 }
 
-#tec{
+#tec {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 200;
@@ -211,7 +232,7 @@ section .nave{
     font-family: 'Source Code Pro', monospace;
 }
 
-#tec h2{
+#tec h2 {
     font-size: 3rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
@@ -219,7 +240,7 @@ section .nave{
     font-family: 'Source Code Pro', monospace;
 }
 
-#tec span{
+#tec span {
     background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(80, 80, 80));
     -webkit-background-clip: text;
     background-clip: text;
@@ -229,11 +250,11 @@ section .nave{
     font-size: 3.5rem;
 }
 
-.info-container{
-width: 50%;
+.info-container {
+    width: 50%;
 }
 
-#prof-name{
+#prof-name {
     font-size: 3rem;
     font-weight: 200;
     color: rgb(213, 130, 255);
@@ -241,11 +262,11 @@ width: 50%;
     font-family: 'Source Code Pro', monospace;
 }
 
-#projetos{
+#projetos {
     margin: 4rem auto;
 }
 
-#projetos h2{
+#projetos h2 {
     font-size: 3rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
@@ -253,7 +274,7 @@ width: 50%;
     font-family: 'Source Code Pro', monospace;
 }
 
-#projetos span{
+#projetos span {
     background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(80, 80, 80));
     -webkit-background-clip: text;
     background-clip: text;
@@ -263,15 +284,14 @@ width: 50%;
     font-size: 3.5rem;
 }
 
-.projeto-grid{
+.projeto-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     padding: 0.5rem;
 }
 
-
-.projeto{
+.projeto {
     background: rgba(9, 0, 12, 0.8);
     padding: 1.5rem;
     color: #fff;
@@ -283,44 +303,52 @@ width: 50%;
     cursor: pointer;
 }
 
-.border-anime{
+.border-anime {
     border: 1px solid transparent;
     transition: 1s;
 }
 
-.border-active{
+.border-active {
     border: 1px solid rgb(58, 1, 150);
 }
 
-.border-anime:hover{
+.border-anime:hover {
     border: 1px solid rgb(110, 12, 175);
     transition: 1s;
 }
 
-.type{
+.type {
     font-size: 1rem;
     font-weight: 200;
     color: rgb(210, 71, 252);
     align-items: center;
     font-family: 'Source Code Pro', monospace;
 }
-.type i{
+
+.type i {
     font-size: 1.2rem;
 }
 
-.projeto h3{
+.projeto h3 {
     font-size: 1.5rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
     font-family: 'Source Code Pro', monospace;
 }
 
-.projeto-descricao{
+.projeto-descricao {
     font-size: 0.9rem;
     font-weight: 200;
+    text-align: justify;
+    text-align-last: left;
 }
 
-.projeto a{
+#descricao {
+    text-align: justify;
+    text-align-last: left;
+}
+
+.projeto a {
     color: rgb(213, 130, 255);
     text-decoration: none;
     font-size: 1rem;
@@ -328,15 +356,13 @@ width: 50%;
     font-family: 'Source Code Pro', monospace;
     transition: 0.2s;
 }
-.projeto a:hover{
+
+.projeto a:hover {
     text-decoration: none;
     color: rgb(216, 144, 252);
 }
 
-/* RODAPÉ E CONTATO */
-/* MENU SOBREPOSTO */
-
-.menu{
+.menu {
     position: fixed;
     bottom: 0px;
     right: 25px;
@@ -347,17 +373,17 @@ width: 50%;
     align-items: center;
 }
 
-.menu .toggle{
+.menu .toggle {
     position: absolute;
     width: 50px;
     height: 50px;
-    background: rgba( 144, 19, 254, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 14.5px );
-    -webkit-backdrop-filter: blur( 14.5px );
+    background: rgba(144, 19, 254, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    color: rgba(255, 255, 255,1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 1);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -367,14 +393,14 @@ width: 50%;
     transition: 0.4s;
 }
 
-.menu .toggle.active{
+.menu .toggle.active {
     transform: rotate(136deg);
-    box-shadow: 0 0 0 35px rgba( 144, 19, 254, 0.25 ), 0 0 0 35px rgba( 144, 19, 254, 0.1 );
+    box-shadow: 0 0 0 35px rgba(144, 19, 254, 0.25), 0 0 0 35px rgba(144, 19, 254, 0.1);
     background: transparent;
     color: #fff;
 }
 
-.menu li{
+.menu li {
     position: absolute;
     list-style: none;
     left: 23px;
@@ -385,14 +411,16 @@ width: 50%;
     transition: 0.3s;
     z-index: 10;
 }
-
-.menu.active li{
+#biosec, #tec, #projetos{
+        height: 100%;
+    }
+.menu.active li {
     visibility: visible;
     opacity: 1;
     transition: 1s;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     display: flex;
@@ -404,80 +432,110 @@ width: 50%;
     transform: rotate(calc(360deg / -5 * var(--i)));
 }
 
-
 /* Responsividade */
 
+@media screen and (max-width: 980px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-
-
-@media screen and (max-width: 980px){
-    .grid-container{
+    .projeto-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .projeto-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .info-container{
+    .info-container {
         align-self: center;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .logo_icon {
+        width: 100%;
+        -webkit-filter: drop-shadow(0 0 100px rgba(59, 3, 97, 0.5));
+        filter: drop-shadow(10px 0 100px rgba(61, 2, 100, 0.5));
     }
 }
 
-@media screen and (max-width: 768px){
-    .bio h2{
+@media screen and (max-width: 768px) {
+    .bio h2 {
         display: block;
         margin: 0 auto;
     }
-    .bio #nome{
+
+    .bio #nome {
         font-size: 5rem;
     }
-    .grid-container{
-        grid-template-columns: repeat(2, 1fr);
 
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .grid-item{
+
+    .grid-item {
         width: 150px;
         height: 150px;
         font-size: 4rem;
     }
-    .info-container{
+
+    .info-container {
         width: 100%;
     }
-    .projeto-grid{
+
+    .projeto-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    #projetos{
+    #projetos {
         margin-top: 5rem;
     }
-    
 }
 
-@media screen and (max-width: 452px){
-    .bio{
+@media screen and (max-width: 452px) {
+    .bio {
         margin: 0 auto;
     }
-    .bio #nome{
-        font-size: 3.5rem;
+    #biosec, #tec, #projetos{
+        height: 100%;
     }
 
-    .bio #nome, .bio span{
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bio #nome {
+        font-size: 3.5rem;
+    }
+    .bio p{
+        margin: 0 0.5rem;
+    }
+
+    .bio #nome,
+    .bio span {
         text-align: center;
     }
 
-    #tec h2{
+    #tec{
+        margin-top: 5rem;
+    }
+    #tec h2 {
         font-size: 2rem;
     }
 
-    #tec span{
+    #tec span {
         font-size: 2.5rem;
     }
 
-    #prof-name{
+    #descricao {
+        text-align: justify;
+        text-align-last: center;
+        padding: 1rem;
+    }
+
+    #prof-name {
         font-size: 2rem;
         margin-bottom: 10px;
     }
+
+    #projetos {
+        margin: 10rem auto 7rem auto;
+    }
 }
-
-

@@ -1,10 +1,10 @@
 descricoes = {
-    "Python": "É uma linguagem de programação de alto nível, orientada a objetos; onde eu à utilizo na criação de funcionalidades e desenvolvimento de API's.",
-    "Django": "Django é um framework web, escrito em Python, que segue o padrão de projeto 'MTV'; tendo como principal função para mim, o desenvolvimento de API's.",
-    "Docker": "Docker é uma plataforma automatiza a implantação de aplicativos dentro de contêineres de software, fornecendo uma camada adicional de abstração.",
-    "Linux": "Linux é um sistema operacional de código aberto,  essencial quando o assunto são servidores, o que o torna indispensável para um desenvolvedor backend.",
-    "MongoDB": "MongoDB é um software de banco de dados orientado a documentos livre (não relacional). O MongoDB usa de documentos semelhantes a JSON com esquemas.",
-    "MySQL": "MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É um dos sistemas de gerenciamento de banco de dados mais populares.",
+    "Python": "Uma linguagem de alto nível com sintaxe simples e direta sendo utilizadas em diversas áreas, uma escolha excelente quando o foco é webscrapping e análise de dados.",
+    "Java": "Uma das linguagens de programação mais utilizadas no mundo, que tenho um apreço especial, à utilizo principalmente no desenvolvimento de aplicações desktop e web.",
+    "Go": "Go é uma linguagem de programação de código aberto que facilita a criação de software simples, confiável e eficiente, sendo uma excelente escolha para o desenvolvimento de aplicações de alta performance.",
+    "Linux": "Linux é um sistema operacional de código aberto, essencial quando o assunto são servidores, o que o torna indispensável para um desenvolvedor completo.",
+    "Git": "Git é um sistema de controle de versões distribuído, utilizado para o versionamento de código, o que a torna essencial para um processo de desenvolvimento organizado e eficiente.",
+    "Bash": "Bash é uma linguagem de script utilizada em sistemas operacionais Unix, sendo uma ferramenta essencial para a automação de tarefas e administração de sistemas."
 }
 
 
