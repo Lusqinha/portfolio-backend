@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    background: rgb(23, 1, 41);
     background: radial-gradient(circle, rgba(23, 1, 41, 1) 0%, rgba(13, 0, 22, 1) 100%);
     background-size: cover;
     background-position: top center;
@@ -55,7 +54,6 @@ a::selection {
     position: absolute;
     width: 100%;
     height: 1px;
-    background: rgb(243, 234, 249);
     background: linear-gradient(90deg, rgba(45, 1, 75, 0.5) 0%, rgba(110, 12, 175, 1) 56%);
     bottom: 0;
     left: 0;
@@ -133,23 +131,22 @@ nav li {
 }
 
 .linux_intro {
-    color: #697e5e !important;
+    color: #9057cc !important;
 }
 
 .linux_intro_white {
     color: #bec0c6 !important;
 }
 
-.linux_intro_blue {
-    color: #5796cc !important;
+.linux_intro_lpurple {
+    color: #b650f5 !important;
 }
 
-#command{
+#command {
     margin-left: 0.8rem;
 }
 
 /* CONTEÚDO PRINCIPAL */
-
 .bio h2 {
     font-size: 2rem;
     font-weight: 200;
@@ -181,8 +178,15 @@ nav li {
     font-family: 'Source Code Pro', monospace;
 }
 
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 section .logo_icon {
-    width: 35vw;
+    width: 25vw;
     margin-left: 10vw;
     transform: scaleX(-1);
     -webkit-filter: drop-shadow(0 0 100px rgba(59, 3, 97, 0.5));
@@ -190,7 +194,8 @@ section .logo_icon {
 }
 
 #biosec,
-#tec,#projetos {
+#tec,
+#projetos {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -411,9 +416,7 @@ section .logo_icon {
     transition: 0.3s;
     z-index: 10;
 }
-#biosec, #tec, #projetos{
-        height: 100%;
-    }
+
 .menu.active li {
     visibility: visible;
     opacity: 1;
@@ -434,7 +437,17 @@ section .logo_icon {
 
 /* Responsividade */
 
+@media screen and (max-width: 1450px) {
+    #nome {
+        font-size: 4rem;
+    }
+}
+
 @media screen and (max-width: 980px) {
+    #nome {
+        font-size: 4rem;
+    }
+
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -449,10 +462,8 @@ section .logo_icon {
         padding: 0 1rem;
     }
 
-    .logo_icon {
-        width: 100%;
-        -webkit-filter: drop-shadow(0 0 100px rgba(59, 3, 97, 0.5));
-        filter: drop-shadow(10px 0 100px rgba(61, 2, 100, 0.5));
+    section .logo_icon {
+        width: 35vw;
     }
 }
 
@@ -462,8 +473,17 @@ section .logo_icon {
         margin: 0 auto;
     }
 
+    .bio {
+        align-items: center;
+    }
+
+    .bio p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
     .bio #nome {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .grid-container {
@@ -490,10 +510,16 @@ section .logo_icon {
 }
 
 @media screen and (max-width: 452px) {
-    .bio {
-        margin: 0 auto;
+    .logo h1 {
+        font-size: 1.5rem;
     }
-    #biosec, #tec, #projetos{
+
+    #biosec {
+        height: 80vh;
+    }
+
+    #tec,
+    #projetos {
         height: 100%;
     }
 
@@ -502,10 +528,15 @@ section .logo_icon {
     }
 
     .bio #nome {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
-    .bio p{
-        margin: 0 0.5rem;
+
+    .bio p {
+        font-size: 1.1rem;
+    }
+
+    .bio h2 {
+        font-size: 1rem;
     }
 
     .bio #nome,
@@ -513,9 +544,10 @@ section .logo_icon {
         text-align: center;
     }
 
-    #tec{
+    #tec {
         margin-top: 5rem;
     }
+
     #tec h2 {
         font-size: 2rem;
     }
