@@ -61,32 +61,32 @@
             </div>
             <img src="src/web/fedora.svg" alt="Ilustração de um chapéu fedora branco" class="d-md-inline-block logo_icon">
         </section>
-        <section id="tec" class="mx-auto mt-5">
+        <section id="tec" class="mx-auto my-5">
             <h2 class="py-3"><span>{</span>Tecnologias<span>}</span></h2>
             <script src="src/js/tecnologias.js"></script>
-            <div class="d-flex mx-sm-5 justify-content-around flex-lg-row flex-column">
-                <div class="info-container mx-auto px-5">
+            <div class="tech-div d-flex mx-sm-5 justify-content-between align-items-between flex-xl-row flex-column">
+                <div class="info-container mx-auto px-md-5 mb-5">
                     <h3 id="prof-name" class="underline-anime mb-3">Descrição</h3>
                     <p id="descricao">Clique em alguma das tecnologias no painel para ler uma breve descrição sobre seu funcionamento e utilização.</p>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto my-auto">
                     <ul class="grid-container mx-auto">
-                        <li onclick="mostrarDescricao('Python')" class="underline-anime cards grid-item">
+                        <li data-tech="Python" class="underline-anime cards grid-item">
                             <i class="devicon-python-plain"></i>
                         </li>
-                        <li onclick="mostrarDescricao('Ruby')" class="underline-anime cards grid-item">
+                        <li data-tech="Ruby" class="underline-anime cards grid-item">
                             <i class="devicon-ruby-plain"></i>
                         </li>
-                        <li onclick="mostrarDescricao('Go')" class="underline-anime cards grid-item">
+                        <li data-tech="Go" class="underline-anime cards grid-item">
                             <i class="devicon-go-original-wordmark"></i>
                         </li>
-                        <li onclick="mostrarDescricao('Git')" class="underline-anime cards grid-item">
+                        <li data-tech="Git" class="underline-anime cards grid-item">
                             <i class="devicon-git-plain"></i>
                         </li>
-                        <li onclick="mostrarDescricao('Linux')" class="underline-anime cards grid-item">
+                        <li data-tech="Linux" class="underline-anime cards grid-item">
                             <i class="devicon-linux-plain"></i>
                         </li>
-                        <li onclick="mostrarDescricao('Bash')" class="underline-anime cards grid-item">
+                        <li data-tech="Bash" class="underline-anime cards grid-item">
                             <i class="devicon-bash-plain"></i>
                         </li>
                     </ul>
@@ -122,6 +122,34 @@
                 </div>
             </div>
         </section>
+        <section>
+            <ul class="menu">
+                <div onclick="toggler()" class="toggle">
+        
+                    <i class="fa-solid fa-plus"></i>
+        
+                </div>
+                <li style="--i:0;"><a href="https://www.linkedin.com/in/lucas-borges-da-silva-rs/" target="_blank">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a></li>
+                <li style="--i:1;"><a href="https://github.com/Lusqinha" target="_blank">
+                        <i class="devicon-github-original"></i>
+                    </a></li>
+                <li style="--i:2;"><a href="https:/x.com/kernelape" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a></li>
+                <li style="--i:3;"><a href="https://calendly.com/lusqinha" target="_blank"><i class="fa-solid fa-calendar"></i>
+                    </a></li>
+                <li style="--i:4;"><a
+                        href="https://cursos.alura.com.br/user/lucasborges/fullCertificate/79e67bda0de3a038fd639f54630dd328"
+                        target="_blank"><i class="fa-solid
+                                    fa-scroll"></i>
+                    </a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="src/js/menu-btn.js"></script>
+    <script src="src/js/animation.js"></script>
 </body>
 
 </html>

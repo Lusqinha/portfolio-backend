@@ -33,3 +33,25 @@ for (let i = 0; i < nave.length; i++) {
         duration: 3000
     })
 }
+
+const cards_i = document.querySelectorAll('.cards i')
+
+for (let i = 0; i < cards_i.length; i++) {
+    sr.reveal(cards_i[i], {
+        delay: 100 * i,
+        origin: 'top',
+        distance: '150px',
+        duration: 3000,
+        reset: true
+    })
+}
+
+const cards_tec = document.querySelectorAll('.cards')
+
+for (let i = 0; i < cards_tec.length; i++) {
+    cards_tec[i].addEventListener('mouseover', function () {
+        tecnologia = cards_tec[i].getAttribute('data-tech')
+        mostrarDescricao(tecnologia)
+    })
+}
+

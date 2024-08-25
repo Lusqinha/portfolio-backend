@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html.sr .load-hidden {
     visibility: hidden;
 }
 
 html {
-    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: "Poppins", system-ui;
 }
 
 body {
@@ -67,6 +69,12 @@ a::selection {
     transform-origin: bottom left;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* CABEÇALHO E DEPENDÊNCIAS */
 
 header {
@@ -114,12 +122,12 @@ nav li {
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Poppins", system-ui;
 }
 
 .logo .span_highlight {
     font-size: 2.5rem;
-    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(61, 61, 61));
+    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(75, 0, 129));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,16 +161,16 @@ nav li {
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Poppins", system-ui;
 }
 
 .bio #nome {
     font-size: 6rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Poppins", system-ui;
 }
 
 .bio span {
-    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(61, 61, 61));
+    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(75, 0, 129));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -175,7 +183,7 @@ nav li {
     font-weight: 200;
     color: rgb(255, 255, 255);
     align-items: center;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Poppins", system-ui;
 }
 
 .bio {
@@ -196,7 +204,7 @@ section .logo_icon {
 #biosec,
 #tec,
 #projetos {
-    height: 100%;
+    height: 80svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,7 +242,6 @@ section .logo_icon {
     font-weight: 200;
     color: rgb(255, 255, 255);
     align-items: center;
-    font-family: 'Source Code Pro', monospace;
 }
 
 #tec h2 {
@@ -242,11 +249,22 @@ section .logo_icon {
     font-weight: 200;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: 'Source Code Pro', monospace;
 }
 
+
+#tec .cards {
+    transition: 0.5s ease-in-out;
+}
+
+#tec .cards:hover {
+    text-shadow: 0 0 5px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #8000ff, 0 0 10px #8800ff, 0 0 0px #9000ff, 0 0 30px #8800ff, 0 0 60px #a600ff;
+    transform: scale(2.1);
+    transition: 1s ease-in-out;
+}
+
+
 #tec span {
-    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(80, 80, 80));
+    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(75, 0, 129));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -256,15 +274,18 @@ section .logo_icon {
 }
 
 .info-container {
-    width: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/* align you to te top of div */
 #prof-name {
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 400;
     color: rgb(213, 130, 255);
-    align-items: center;
-    font-family: 'Source Code Pro', monospace;
 }
 
 #projetos {
@@ -276,11 +297,10 @@ section .logo_icon {
     font-weight: 200;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: 'Source Code Pro', monospace;
 }
 
 #projetos span {
-    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(80, 80, 80));
+    background: -webkit-linear-gradient(rgb(116, 0, 161), rgb(75, 0, 129));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -304,7 +324,6 @@ section .logo_icon {
     grid-area: auto;
     font-size: 1rem;
     font-weight: 200;
-    font-family: 'Source Code Pro', monospace;
     cursor: pointer;
 }
 
@@ -327,7 +346,6 @@ section .logo_icon {
     font-weight: 200;
     color: rgb(210, 71, 252);
     align-items: center;
-    font-family: 'Source Code Pro', monospace;
 }
 
 .type i {
@@ -338,7 +356,6 @@ section .logo_icon {
     font-size: 1.5rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
-    font-family: 'Source Code Pro', monospace;
 }
 
 .projeto-descricao {
@@ -351,6 +368,7 @@ section .logo_icon {
 #descricao {
     text-align: justify;
     text-align-last: left;
+    max-height: 25vh;
 }
 
 .projeto a {
@@ -358,7 +376,6 @@ section .logo_icon {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 200;
-    font-family: 'Source Code Pro', monospace;
     transition: 0.2s;
 }
 
@@ -408,7 +425,7 @@ section .logo_icon {
 .menu li {
     position: absolute;
     list-style: none;
-    left: 23px;
+    left: 25px;
     transform: rotate(calc(360deg / 5 * var(--i)));
     transform-origin: 55px;
     visibility: hidden;
@@ -425,7 +442,7 @@ section .logo_icon {
 
 .menu li a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 1);
+    color: rgb(228, 195, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -433,6 +450,13 @@ section .logo_icon {
     height: 25px;
     font-size: 1.3em;
     transform: rotate(calc(360deg / -5 * var(--i)));
+    transition: 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 30px rgb(255, 0, 247);
+    transition: 0.3s ease-in-out;
 }
 
 /* Responsividade */
@@ -454,12 +478,6 @@ section .logo_icon {
 
     .projeto-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .info-container {
-        align-self: center;
-        width: 100%;
-        padding: 0 1rem;
     }
 
     section .logo_icon {
@@ -509,7 +527,7 @@ section .logo_icon {
     }
 }
 
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 528px) {
     .logo h1 {
         font-size: 1.5rem;
     }
@@ -517,7 +535,16 @@ section .logo_icon {
     #biosec {
         height: 80vh;
     }
+    .info-container{
+        padding: 0 1rem;
 
+    }
+        #biosec,
+        #tec,
+        #projetos {
+            height: 100svh;
+        }
+    
     #tec,
     #projetos {
         height: 100%;
@@ -567,7 +594,7 @@ section .logo_icon {
         margin-bottom: 10px;
     }
 
-    #projetos {
+    /* #projetos {
         margin: 10rem auto 7rem auto;
-    }
+    } */
 }
